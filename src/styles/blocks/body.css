@@ -1,0 +1,22 @@
+.page {
+	font-family: var(--font-main);
+	font-size: var(
+		--font-size-text-medium
+	);
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	scroll-behavior: smooth;
+}
+
+.page__body {
+	color: rgb(var(--color));
+	background-color: rgb(
+		var(--color-bg)
+	);
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows:
+		min-content
+		1fr
+		min-content;
+}

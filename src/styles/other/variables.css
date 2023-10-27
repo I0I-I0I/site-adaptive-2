@@ -1,0 +1,109 @@
+:root {
+	/* Page */
+	--page-width: 1280px;
+	--page-padding: 24px;
+	--main-width: calc(
+		var(--page-width) +
+			(var(--page-padding) * 2)
+	);
+
+	/* Font */
+	--font-main: sans-serif;
+
+	/* Font size */
+	/* Text */
+	--font-size-text-small: 0.875rem;
+	--font-size-text-medium: 1rem;
+	--font-size-text-large: 1.125rem;
+
+	/* Title */
+	--font-size-h1: 2.25rem;
+	--font-size-h2: 2rem;
+	--font-size-h3: 1.5rem;
+	--font-size-h4: 1.25rem;
+
+	/* Colors */
+	--dark-primary: 42 37 75;
+	--primary: 78 77 147;
+	--light-gray: 249 249 249;
+	--border-gray: 235 232 244;
+	--border-dark: 202 198 218;
+	--white: 255 255 255;
+	--black: 0 0 0;
+
+	/* Text */
+	--color-text: rgb(var(--black));
+
+	/* Button */
+	--color-button-disabled: 50%;
+
+	/* Main */
+	--color-bg-button: rgb(
+		var(var(--white))
+	);
+	--color-bg-button-hover: rgb(
+		var(--light-gray)
+	);
+	--color-bg-button-focus: rgb(
+		var(--white)
+	);
+	--color-bg-button-outline: rgb(
+		var(--primary)
+	);
+
+	/* Secondary */
+	--color-bg-button-secondary: rgb(
+		var(--light-gray)
+	);
+	--color-bg-button-secondary-hover: rgb(
+		var(--border-gray)
+	);
+	--color-bg-button-secondary-focus: rgb(
+		var(--light-gray)
+	);
+	--color-bg-button-secondary-outline: rgb(
+		var(--primary)
+	);
+
+	/* Primary */
+	--color-bg-button-primary: rgb(
+		var(--dark-primary) / 0.75
+	);
+	--color-bg-button-primary-hover: rgb(
+		var(--dark-primary)
+	);
+	--color-bg-button-primary-focus: rgb(
+		var(--dark-primary) / 0.75
+	);
+	--color-bg-button-primary-outline: rgb(
+		var(--primary)
+	);
+
+	/* Opaque */
+	--color-bg-button-opaque: rgb(
+		var(--light-gray) / 0.15
+	);
+	--color-bg-button-opaque-hover: rgb(
+		var(--light-gray) / 0.3
+	);
+	--color-bg-button-opaque-focus: rgb(
+		var(--light-gray) / 0.15
+	);
+	--color-bg-button-opaque-outline: rgb(
+		var(--primary)
+	);
+
+	/* Ghost */
+	--color-bg-button-ghost: rgb(
+		var(--black) / 0
+	);
+	--color-bg-button-ghost-hover: rgb(
+		var(--border-gray)
+	);
+	--color-bg-button-ghost-focus: rgb(
+		var(--black) / 0
+	);
+	--color-bg-button-ghost-outline: rgb(
+		var(--primary)
+	);
+}

@@ -1,0 +1,522 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Other */
+
+:root {
+  /* Page */
+  --page-width: 1280px;
+  --page-padding: 24px;
+  --main-width: calc(
+		var(--page-width) +
+			(var(--page-padding) * 2)
+	);
+  /* Font */
+  --font-main: sans-serif;
+  /* Font size */
+  /* Text */
+  --font-size-text-small: 0.875rem;
+  --font-size-text-medium: 1rem;
+  --font-size-text-large: 1.125rem;
+  /* Title */
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  /* Colors */
+  --dark-primary: 42 37 75;
+  --primary: 78 77 147;
+  --light-gray: 249 249 249;
+  --border-gray: 235 232 244;
+  --border-dark: 202 198 218;
+  --white: 255 255 255;
+  --black: 0 0 0;
+  /* Text */
+  --color-text: rgb(var(--black));
+  /* Button */
+  --color-button-disabled: 50%;
+  /* Main */
+  --color-bg-button: rgb(
+		var(var(--white))
+	);
+  --color-bg-button-hover: rgb(
+		var(--light-gray)
+	);
+  --color-bg-button-focus: rgb(
+		var(--white)
+	);
+  --color-bg-button-outline: rgb(
+		var(--primary)
+	);
+  /* Secondary */
+  --color-bg-button-secondary: rgb(
+		var(--light-gray)
+	);
+  --color-bg-button-secondary-hover: rgb(
+		var(--border-gray)
+	);
+  --color-bg-button-secondary-focus: rgb(
+		var(--light-gray)
+	);
+  --color-bg-button-secondary-outline: rgb(
+		var(--primary)
+	);
+  /* Primary */
+  --color-bg-button-primary: rgb(
+		var(--dark-primary) / 0.75
+	);
+  --color-bg-button-primary-hover: rgb(
+		var(--dark-primary)
+	);
+  --color-bg-button-primary-focus: rgb(
+		var(--dark-primary) / 0.75
+	);
+  --color-bg-button-primary-outline: rgb(
+		var(--primary)
+	);
+  /* Opaque */
+  --color-bg-button-opaque: rgb(
+		var(--light-gray) / 0.15
+	);
+  --color-bg-button-opaque-hover: rgb(
+		var(--light-gray) / 0.3
+	);
+  --color-bg-button-opaque-focus: rgb(
+		var(--light-gray) / 0.15
+	);
+  --color-bg-button-opaque-outline: rgb(
+		var(--primary)
+	);
+  /* Ghost */
+  --color-bg-button-ghost: rgb(
+		var(--black) / 0
+	);
+  --color-bg-button-ghost-hover: rgb(
+		var(--border-gray)
+	);
+  --color-bg-button-ghost-focus: rgb(
+		var(--black) / 0
+	);
+  --color-bg-button-ghost-outline: rgb(
+		var(--primary)
+	);
+}
+
+.button {
+  font-size: var(
+		--font-size-text-medium
+	);
+  padding: 16px 32px;
+  border: none;
+}
+
+.button:focus-visible {
+  outline-width: 2px;
+  outline-style: solid;
+}
+
+.button-small {
+  padding: 12px 24px;
+}
+
+.button-default {
+  background-color: var(
+		--color-bg-button
+	);
+}
+
+.button-default:hover {
+  background-color: var(
+			--color-bg-button-hover
+		);
+}
+
+.button-default:focus-visible {
+  background-color: var(
+			--color-bg-button-focus
+		);
+  outline-color: var(
+			--color-bg-button-outline
+		);
+}
+
+.button-secondary {
+  background-color: var(
+		--color-bg-button-secondary
+	);
+}
+
+.button-secondary:hover {
+  background-color: var(
+			--color-bg-button-secondary-hover
+		);
+}
+
+.button-secondary:focus-visible {
+  background-color: var(
+			--color-bg-button-secondary-focus
+		);
+  outline-color: var(
+			--color-bg-button-secondary-outline
+		);
+}
+
+.button-primary {
+  background-color: var(
+		--color-bg-button-primary
+	);
+}
+
+.button-primary:hover {
+  background-color: var(
+			--color-bg-button-primary-hover
+		);
+}
+
+.button-primary:focus-visible {
+  background-color: var(
+			--color-bg-button-primary-focus
+		);
+  outline-color: var(
+			--color-bg-button-primary-outline
+		);
+}
+
+.button-opaque {
+  background-color: var(
+		--color-bg-button-opaque
+	);
+}
+
+.button-opaque:hover {
+  background-color: var(
+			--color-bg-button-opaque-hover
+		);
+}
+
+.button-opaque:focus-visible {
+  background-color: var(
+			--color-bg-button-opaque-focus
+		);
+  outline-color: var(
+			--color-bg-button-opaque-outline
+		);
+}
+
+.button-ghost {
+  background-color: var(
+		--color-bg-button-ghost
+	);
+}
+
+.button-ghost:hover {
+  background-color: var(
+			--color-bg-button-ghost-hover
+		);
+}
+
+.button-ghost:focus-visible {
+  background-color: var(
+			--color-bg-button-ghost-focus
+		);
+  outline-color: var(
+			--color-bg-button-ghost-outline
+		);
+}
+
+/* Container */
+
+.container {
+  max-width: var(--main-width);
+  padding: 0 var(--page-padding);
+  margin: 0 auto;
+}
+
+/* Hidden */
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Title */
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+/* Blocks */
+
+.page {
+  font-family: var(--font-main);
+  font-size: var(
+		--font-size-text-medium
+	);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  color: rgb(var(--color));
+  background-color: rgb(
+		var(--color-bg)
+	);
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-min-content
+		1fr
+		-webkit-min-content;
+  -ms-grid-rows: min-content
+		1fr
+		min-content;
+  grid-template-rows: -webkit-min-content
+		1fr
+		-webkit-min-content;
+  grid-template-rows: min-content
+		1fr
+		min-content;
+}
+
+/* Header */
+
+/* Main */
+
+/* Sidebar */
+
+/* Footer */
