@@ -1,0 +1,30 @@
+.banner {
+	background-color: var(
+		--color-bg-banner
+	);
+	padding: 11px 0;
+}
+
+.banner__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner__text {
+	color: var(--color-text-invert);
+	font-family: var(--font-main);
+	font-size: var(
+		--font-size-text-small
+	);
+}
+
+.banner__button-close {
+	background-image: url("../images/icons/button-close.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: transparent;
+	width: 24px;
+	height: 24px;
+	border: 0;
+}

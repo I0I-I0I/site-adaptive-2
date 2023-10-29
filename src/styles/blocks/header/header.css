@@ -1,0 +1,54 @@
+@import "navigation.css";
+@import "search.css";
+@import "logo.css";
+@import "user.css";
+@import "banner.css";
+@import "burger.css";
+
+.header hr {
+	@media (width < 1000px) {
+		display: none;
+	}
+}
+
+.header__inner {
+	gap: 20px;
+
+	@media (width < 1000px) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.header__top {
+	padding: 20px 0;
+	gap: 20px;
+	width: 100%;
+}
+
+.header__interactive {
+	gap: 16px;
+	justify-content: center;
+
+	@media (width < 1000px) {
+		order: 2;
+		margin-left: auto;
+	}
+}
+
+.header__inner > hr {
+	height: 1px;
+	width: 100%;
+	border: 0;
+	background-color: rgb(
+		var(--black) / 0.1
+	);
+}
+
+/* Product */
+
+.product .header__inner {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+

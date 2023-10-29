@@ -1,0 +1,17 @@
+.burger {
+	background-color: transparent;
+	flex-direction: column;
+	border: none;
+	width: 16px;
+	height: 16px;
+
+	@media (width >= 1000px) {
+		display: none;
+	}
+}
+
+.burger > span {
+	height: 2px;
+	width: 16px;
+	background-color: black;
+}

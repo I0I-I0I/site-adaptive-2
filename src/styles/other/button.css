@@ -79,6 +79,7 @@
 }
 
 .button-opaque {
+	color: var(--text-color);
 	background-color: var(
 		--color-bg-button-opaque
 	);

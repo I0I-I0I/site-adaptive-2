@@ -1,0 +1,11 @@
+.logo {
+	display: inline-block;
+	color: #22202e;
+	font-family: var(--font-second);
+	font-size: 1.5rem;
+	line-height: normal;
+
+	@media (width < 1000px) {
+		order: 0;
+	}
+}

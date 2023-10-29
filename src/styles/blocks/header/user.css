@@ -1,0 +1,38 @@
+/* User */
+
+.user__list {
+	display: flex;
+	gap: 16px;
+	justify-content: flex-end;
+
+	@media (width < 1000px) {
+		display: none;
+	}
+}
+
+.user__item {
+	display: flex;
+	align-items: center;
+}
+
+.user__link {
+	display: inline-block;
+}
+
+/* Icons */
+
+.user-avatar {
+	background-image: url("../images/icons/user-cart.svg") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 16px;
+	height: 16px;
+}
+
+.user-cart {
+	background-image: url("../images/icons/user-avatar.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 16px;
+	height: 16px;
+}

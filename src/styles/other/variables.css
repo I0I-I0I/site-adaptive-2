@@ -8,7 +8,11 @@
 	);
 
 	/* Font */
-	--font-main: sans-serif;
+	--font-main: "Satoshi", sans-serif;
+	--font-second: "ClashDisplay-Regular",
+		sans-serif;
+	--font-third: "ClashDisplay-Medium",
+		sans-serif;
 
 	/* Font size */
 	/* Text */
@@ -25,14 +29,25 @@
 	/* Colors */
 	--dark-primary: 42 37 75;
 	--primary: 78 77 147;
-	--light-gray: 249 249 249;
+	--light-grey: 249 249 249;
 	--border-gray: 235 232 244;
 	--border-dark: 202 198 218;
+	--bureaucracy: 114 110 141;
 	--white: 255 255 255;
 	--black: 0 0 0;
 
 	/* Text */
 	--color-text: rgb(var(--black));
+	--color-text-invert: rgb(var(--white));
+
+	/* Navigation */
+	--color-bg-about-menu: rgb(var(--light-grey));
+
+	/* Banner */
+	--color-bg-banner: rgb(var(--dark-primary));
+
+	/* Navigation link */
+	--color-nav-link: rgb(var(--bureaucracy));
 
 	/* Button */
 	--color-button-disabled: 50%;
@@ -42,7 +57,7 @@
 		var(var(--white))
 	);
 	--color-bg-button-hover: rgb(
-		var(--light-gray)
+		var(--light-grey)
 	);
 	--color-bg-button-focus: rgb(
 		var(--white)
@@ -53,13 +68,13 @@
 
 	/* Secondary */
 	--color-bg-button-secondary: rgb(
-		var(--light-gray)
+		var(--light-grey)
 	);
 	--color-bg-button-secondary-hover: rgb(
 		var(--border-gray)
 	);
 	--color-bg-button-secondary-focus: rgb(
-		var(--light-gray)
+		var(--light-grey)
 	);
 	--color-bg-button-secondary-outline: rgb(
 		var(--primary)
@@ -81,13 +96,13 @@
 
 	/* Opaque */
 	--color-bg-button-opaque: rgb(
-		var(--light-gray) / 0.15
+		var(--light-grey) / 0.15
 	);
 	--color-bg-button-opaque-hover: rgb(
-		var(--light-gray) / 0.3
+		var(--light-grey) / 0.3
 	);
 	--color-bg-button-opaque-focus: rgb(
-		var(--light-gray) / 0.15
+		var(--light-grey) / 0.15
 	);
 	--color-bg-button-opaque-outline: rgb(
 		var(--primary)
@@ -106,4 +121,10 @@
 	--color-bg-button-ghost-outline: rgb(
 		var(--primary)
 	);
+
+	/* Page components */
+
+	/* Home */
+	/* Hero */
+	--hero-bg: rgb(var(--dark-primary));
 }
