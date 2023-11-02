@@ -2,14 +2,16 @@
 	<div class="container header__inner">
 		<div class="header__top df">
 			<div class="header__interactive df">
-				@@include("../search.html", {})
+				@@include("../components/search.html", {})
 			</div>
-			@@include("../logo.html", {})
-			@@include("../user.html", {})
+			@@include("../components/logo.html", {
+				link: "#"
+			})
+			@@include("../components/user.html", {})
 		</div>
 
 		<hr />
 
-		@@include("../navigation.html", {})
+		@@include("../components/navigation.html", {})
 	</div>
 </header>

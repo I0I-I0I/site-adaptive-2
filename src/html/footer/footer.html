@@ -1,0 +1,64 @@
+<footer class="footer">
+	<div class="container footer__inner">
+		<section class="footer-top">
+			<!-- Menu -->
+			@@include("list/footer__list.html", {
+				listName: "menu",
+				a: "New arrivals",
+				b: "Best sellers",
+				c: "Recently viewed",
+				d: "Popular this week",
+				e: "All products",
+				f: ""
+			})
+
+			<!-- Categories -->
+			@@include("list/footer__list.html", {
+				listName: "categories",
+				a: "Crockery",
+				b: "Furniture",
+				c: "Homeware",
+				d: "Plant pots",
+				e: "Chairs",
+				f: "Crockery",
+			})
+
+			<!-- Our company -->
+			@@include("list/footer__list.html", {
+				listName: "our-company",
+				a: "About us",
+				linkA: "../../about.html",
+				b: "Vacancies",
+				c: "Contact us",
+				d: "Privacy",
+				e: "Returns policy",
+				f: "",
+			})
+
+			<form action="" class="footer__form">
+				<label for="email">Join our mailing list</label>
+				<div class="form__email">
+					<input
+						class="footer__input input"
+						id="email"
+						placeholder="your@email.com"
+						type="email"
+					/>
+					<button class="button button-default footer__button">Sign up</button>
+				</div>
+			</form>
+		</section>
+		<hr />
+		<section class="footer-bottom">
+			<span class="footer__copyright">Copyright 2023 Avion LTD</span>
+			@@include("social/social.html", {
+				a: "linkedin",
+				b: "facebook",
+				c: "instagram",
+				d: "skype",
+				e: "twitter",
+				f: "pinterest",
+			})
+		</section>
+	</div>
+</footer>

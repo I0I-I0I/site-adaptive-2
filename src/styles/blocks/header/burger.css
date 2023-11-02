@@ -1,9 +1,18 @@
+/* Burger */
+
 .burger {
+	position: relative;
 	background-color: transparent;
 	flex-direction: column;
 	border: none;
 	width: 16px;
 	height: 16px;
+
+	.menu.is-open &::after {
+		content: "";
+		position: fixed;
+		inset: 0;
+	}
 
 	@media (width >= 1000px) {
 		display: none;
@@ -14,4 +23,22 @@
 	height: 2px;
 	width: 16px;
 	background-color: black;
+}
+
+/* Menu */
+
+.menu.is-open > .menu__list {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	gap: 15px;
+	background-color: rgb(
+		var(--light-grey) / 0.9
+	);
+	padding: 15px;
+
+	transform: translate(0);
 }

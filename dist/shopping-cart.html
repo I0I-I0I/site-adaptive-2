@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en" class="page">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Description -->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="image" content="./image/logo.png" />
+
+	<!-- For social -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="968" />
+	<meta property="og:image:height" content="504" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:url" content="http://localhost:3000/" />
+	<meta name="twitter:image:src" content="http://localhost:3000/image.png" />
+	<meta name="twitter:domain" content="localhost:3000" />
+	<meta name="twitter:site" content="@" />
+
+	<meta name="apple-mobile-web-app-title" content="Title" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<!-- https://favicon.io/ -->
+	<!-- https://realfavicongenerator.net/ -->
+
+	<meta rel="preconnect" href="https://fonts.google.com/" />
+
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+
+	<!-- Theme -->
+	<meta name="msapplication-TileImage" content="./image/" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff" />
+
+	<!-- Default url -->
+	<link rel="canonical" href="" />
+
+	<!-- css and js -->
+	<link rel="stylesheet" href="styles/index.min.css?_v=20231102214604" />
+	<script src="js/app.min.js?_v=20231102214604" defer></script>
+	<title>shopping-baskets</title>
+</head>
+
+
+	<body class="page__body">
+		<header class="header product__header">
+	<section class="banner">
+	<div class="container banner__inner df">
+		<span></span>
+		<p class="banner__text">
+			Free delivery on all orders over £50 with code easter checkout
+		</p>
+		<button class="banner__button-close" aria-label="close banner"></button>
+	</div>
+</section>
+
+	<div class="container header__inner df">
+		<a href="../../../index.html" class="logo">Avion</a>
+		<nav class="menu header__menu menu--shadow df" id="menu">
+	<button
+		class="burger df"
+		id="burger"
+		type="button"
+		aria-label="menu burger open"
+	>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+
+	<ul class="menu__list df">
+		<li class="menu__item"><a href="# " class="menu__link">Plant pots</a></li>
+		<li class="menu__item"><a href="#" class="menu__link">Ceramics</a></li>
+		<li class="menu__item"><a href="#" class="menu__link">Tables</a></li>
+		<li class="menu__item"><a href="#" class="menu__link">Chairs</a></li>
+		<li class="menu__item"><a href="#" class="menu__link">Crockery</a></li>
+		<li class="menu__item"><a href="#" class="menu__link">Tableware</a></li>
+		<li class="menu__item"><a href="#" class="menu__link">Cutlery</a></li>
+	</ul>
+</nav>
+
+		<div class="header__interactive df">
+			<button class="search" aria-label="search"></button>
+			<ul class="user__list df">
+	<li class="user__item">
+		<a href="#" class="user__link user-avatar" aria-label="cart"></a>
+	</li>
+	<li class="user__item">
+		<a
+			href="../../../shopping-cart.html"
+			class="user__link user-cart"
+			aria-label="account"
+		></a>
+	</li>
+</ul>
+
+		</div>
+	</div>
+</header>
+
+
+		<main class="main">
+			<section class="cart">
+	<div class="container cart__inner">
+		<h1 class="cart__title">Your shopping cart</h1>
+		<table class="cart__table">
+			<thead>
+				<tr>
+					<th>Product</th>
+					<th>Quantity</th>
+					<th>Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="cart__product">
+					<td>
+						<div class="product__item">
+							<img
+								src="images/cart/product-image-1.jpg"
+								alt="Graystone vase"
+							/>
+							<div class="product__description">
+								<h2 class="cart__subtitle">Graystone vase</h2>
+								<span
+									>A timeless ceramic vase with a tri color grey glaze.</span
+								>
+								<span class="product__price">£85</span>
+							</div>
+						</div>
+					</td>
+					<td class="quantity">
+						<button
+	class="button button-secondary button-small counter__button"
+	id="button-decrement"
+>
+	-
+</button>
+<span class="counter__value counter__item" id="counter-value">1</span>
+<button
+	class="button button-secondary button-small counter__button"
+	id="button-increment"
+>
+	+
+</button>
+
+					</td>
+					<td class="product__price">£85</td>
+				</tr>
+				<tr class="cart__product">
+					<td>
+						<div class="product__item">
+							<img
+								src="images/cart/product-image-2.jpg"
+								alt="Graystone vase"
+							/>
+							<div class="product__description">
+								<h2 class="cart__subtitle">Graystone vase</h2>
+								<span
+									>A timeless ceramic vase with a tri color grey glaze.</span
+								>
+								<span class="product__price">£85</span>
+							</div>
+						</div>
+					</td>
+					<td class="quantity">
+						<button
+	class="button button-secondary button-small counter__button"
+	id="button-decrement"
+>
+	-
+</button>
+<span class="counter__value counter__item" id="counter-value">1</span>
+<button
+	class="button button-secondary button-small counter__button"
+	id="button-increment"
+>
+	+
+</button>
+
+					</td>
+					<td class="product__price">£85</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td></td>
+					<td></td>
+					<td class="total-price-block">
+						<h2 class="total-price__title">Subtotal</h2>
+						<span class="cart__total-price">£210</span>
+						<p class="cart__text">
+							Taxes and shipping are calculated at checkout
+						</p>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<div class="cart__button-block">
+			<button class="button button-primary cart__button">Go to checkout</button>
+		</div>
+	</div>
+</section>
+
+		</main>
+
+		<footer class="footer">
+	<div class="container footer__inner">
+		<section class="footer-top">
+			<!-- Menu -->
+			<div class="footer__menu">
+	<h3 class="footer__title">menu</h3>
+	<ul class="footer__list">
+		<li class="footer__item">
+	<a href="@@linkA" class="footer__link">New arrivals</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkB" class="footer__link">Best sellers</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkC" class="footer__link">Recently viewed</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkD" class="footer__link">Popular this week</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkE" class="footer__link">All products</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkF" class="footer__link"></a>
+</li>
+	</ul>
+</div>
+
+			<!-- Categories -->
+			<div class="footer__categories">
+	<h3 class="footer__title">categories</h3>
+	<ul class="footer__list">
+		<li class="footer__item">
+	<a href="@@linkA" class="footer__link">Crockery</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkB" class="footer__link">Furniture</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkC" class="footer__link">Homeware</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkD" class="footer__link">Plant pots</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkE" class="footer__link">Chairs</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkF" class="footer__link">Crockery</a>
+</li>
+	</ul>
+</div>
+
+			<!-- Our company -->
+			<div class="footer__our-company">
+	<h3 class="footer__title">our-company</h3>
+	<ul class="footer__list">
+		<li class="footer__item">
+	<a href="../../about.html" class="footer__link">About us</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkB" class="footer__link">Vacancies</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkC" class="footer__link">Contact us</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkD" class="footer__link">Privacy</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkE" class="footer__link">Returns policy</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkF" class="footer__link"></a>
+</li>
+	</ul>
+</div>
+
+			<form action="" class="footer__form">
+				<label for="email">Join our mailing list</label>
+				<div class="form__email">
+					<input
+						class="footer__input input"
+						id="email"
+						placeholder="your@email.com"
+						type="email"
+					/>
+					<button class="button button-default footer__button">Sign up</button>
+				</div>
+			</form>
+		</section>
+		<hr />
+		<section class="footer-bottom">
+			<span class="footer__copyright">Copyright 2023 Avion LTD</span>
+			<ul class="social">
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--linkedin"
+		aria-label="linkedin"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--facebook"
+		aria-label="facebook"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--instagram"
+		aria-label="instagram"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--skype"
+		aria-label="skype"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--twitter"
+		aria-label="twitter"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--pinterest"
+		aria-label="pinterest"
+	></a>
+</li>
+
+</ul>
+
+		</section>
+	</div>
+</footer>
+
+	</body>
+</html>

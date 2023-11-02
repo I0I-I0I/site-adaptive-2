@@ -1,0 +1,74 @@
+<section class="cart">
+	<div class="container cart__inner">
+		<h1 class="cart__title">Your shopping cart</h1>
+		<table class="cart__table">
+			<thead>
+				<tr>
+					<th>Product</th>
+					<th>Quantity</th>
+					<th>Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="cart__product">
+					<td>
+						<div class="product__item">
+							<img
+								src="@images/cart/product-image-1.jpg"
+								alt="Graystone vase"
+							/>
+							<div class="product__description">
+								<h2 class="cart__subtitle">Graystone vase</h2>
+								<span
+									>A timeless ceramic vase with a tri color grey glaze.</span
+								>
+								<span class="product__price">£85</span>
+							</div>
+						</div>
+					</td>
+					<td class="quantity">
+						@@include("../components/counter/counter.html")
+					</td>
+					<td class="product__price">£85</td>
+				</tr>
+				<tr class="cart__product">
+					<td>
+						<div class="product__item">
+							<img
+								src="@images/cart/product-image-2.jpg"
+								alt="Graystone vase"
+							/>
+							<div class="product__description">
+								<h2 class="cart__subtitle">Graystone vase</h2>
+								<span
+									>A timeless ceramic vase with a tri color grey glaze.</span
+								>
+								<span class="product__price">£85</span>
+							</div>
+						</div>
+					</td>
+					<td class="quantity">
+						@@include("../components/counter/counter.html")
+					</td>
+					<td class="product__price">£85</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td></td>
+					<td></td>
+					<td class="total-price-block">
+						<h2 class="total-price__title">Subtotal</h2>
+						<span class="cart__total-price">£210</span>
+						<p class="cart__text">
+							Taxes and shipping are calculated at checkout
+						</p>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<div class="cart__button-block">
+			<button class="button button-primary cart__button">Go to checkout</button>
+		</div>
+	</div>
+</section>

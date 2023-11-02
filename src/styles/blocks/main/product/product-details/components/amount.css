@@ -1,0 +1,45 @@
+/* Amount */
+
+.amount {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	padding: 30px 0;
+	gap: clamp(12px, 2vw, 22px);
+}
+
+/* Counter */
+
+.amount__counter {
+	margin-right: auto;
+	display: flex;
+
+	@media (width < 700px) {
+		width: 100%;
+	}
+}
+
+.counter__value {
+	padding: 15px;
+	display: inline-block;
+	text-align: center;
+	width: 50px;
+}
+
+.counter__button {
+	color: var(--color-amount);
+
+	@media (width < 700px) {
+		width: 100%;
+	}
+}
+
+/* Button */
+
+.product__button {
+	@media (width < 700px) {
+		width: 100%;
+	}
+}

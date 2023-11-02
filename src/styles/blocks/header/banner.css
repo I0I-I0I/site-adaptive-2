@@ -1,3 +1,5 @@
+/* Banner */
+
 .banner {
 	background-color: var(
 		--color-bg-banner
@@ -5,19 +7,29 @@
 	padding: 11px 0;
 }
 
-.banner__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+/* Text */
 
 .banner__text {
+	position: relative;
+	padding-left: 24px;
 	color: var(--color-text-invert);
 	font-family: var(--font-main);
 	font-size: var(
 		--font-size-text-small
 	);
 }
+
+/* Icon */
+
+.banner__text::before {
+	content: url("../images/icons/delivery.svg");
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: 0;
+}
+
+/* Button */
 
 .banner__button-close {
 	background-image: url("../images/icons/button-close.svg");

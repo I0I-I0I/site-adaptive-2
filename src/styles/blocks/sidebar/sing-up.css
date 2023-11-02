@@ -1,0 +1,47 @@
+/* Sing-up */
+
+.sing-up {
+	background-color: var(--sing-up-bg);
+	padding: 60px 0;
+
+	@media (width < 700px) {
+		padding: 0;
+	}
+}
+
+.sing-up__inner {
+	background-color: var(
+		--sing-up-bg-inner
+	);
+	text-align: center;
+	padding-top: clamp(43px, 6vw, 60px);
+	padding-bottom: clamp(
+		43px,
+		6vw,
+		60px
+	);
+}
+
+/* Title */
+
+.sing-up__title {
+	font-size: 2.25rem;
+	margin-bottom: 16px;
+}
+
+/* Form */
+
+.sing-up__form {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: clamp(64px, 6vw, 72px);
+}
+
+/* Submit */
+
+.sing-up__submit {
+	@media (width < 500px) {
+		width: 100%;
+	}
+}

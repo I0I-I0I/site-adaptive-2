@@ -47,16 +47,16 @@
 	<link rel="canonical" href="" />
 
 	<!-- css and js -->
-	<link rel="stylesheet" href="styles/index.min.css?_v=20231029235427" />
-	<script src="js/app.min.js?_v=20231029235427" defer></script>
+	<link rel="stylesheet" href="styles/index.min.css?_v=20231102214604" />
+	<script src="js/app.min.js?_v=20231102214604" defer></script>
 	<title>product</title>
 </head>
 
 
 	<body class="page__body">
-		<header class="header product">
+		<header class="header product__header">
 	<section class="banner">
-	<div class="container banner__inner">
+	<div class="container banner__inner df">
 		<span></span>
 		<p class="banner__text">
 			Free delivery on all orders over £50 with code easter checkout
@@ -66,9 +66,14 @@
 </section>
 
 	<div class="container header__inner df">
-		<span class="logo">Avion</span>
-		<nav class="menu header__menu df">
-	<button class="burger df">
+		<a href="../../../index.html" class="logo">Avion</a>
+		<nav class="menu header__menu menu--shadow df" id="menu">
+	<button
+		class="burger df"
+		id="burger"
+		type="button"
+		aria-label="menu burger open"
+	>
 		<span></span>
 		<span></span>
 		<span></span>
@@ -88,9 +93,17 @@
 
 		<div class="header__interactive df">
 			<button class="search" aria-label="search"></button>
-			<ul class="user__list">
-	<li class="user__item"><a href="#" class="user__link user-cart"></a></li>
-	<li class="user__item"><a href="#" class="user__link user-avatar"></a></li>
+			<ul class="user__list df">
+	<li class="user__item">
+		<a href="#" class="user__link user-avatar" aria-label="cart"></a>
+	</li>
+	<li class="user__item">
+		<a
+			href="../../../shopping-cart.html"
+			class="user__link user-cart"
+			aria-label="account"
+		></a>
+	</li>
 </ul>
 
 		</div>
@@ -98,9 +111,323 @@
 </header>
 
 
-		<main class="main"></main>
+		<main class="main">
+			<section class="product">
+	<picture><source srcset="images/product/product.webp" type="image/webp"><img src="images/product/product.jpg" alt="" class="product__image" /></picture>
+	<div class="container product__inner">
+		<div class="product__info">
+			<h1 class="product__title">
+				The Dandy Chair
+				<p class="product__price">£250</p>
+			</h1>
+			<div class="product__description">
+				<h2 class="product__subtitle">Description</h2>
+<p class="product__text">
+	A timeless design, with premium materials features as one of our most popular
+	and iconic pieces. The dandy chair is perfect for any stylish living space
+	with beech legs and lambskin leather upholstery.
+</p>
+<ul class="product__characteristic">
+	<li>Premium material</li>
+	<li>Handmade upholstery</li>
+	<li>Quality timeless classic</li>
+</ul>
 
-		<footer class="footer"></footer>
+
+				<table class="product__table">
+	<caption>
+		Dimensions
+	</caption>
+	<thead>
+		<tr>
+			<th>Height</th>
+			<th>Width</th>
+			<th>Depth</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>110cm</td>
+			<td>75cm</td>
+			<td>50cm</td>
+		</tr>
+	</tbody>
+</table>
+
+
+				<section class="amount">
+	<h2 class="product__subtitle">Amount:</h2>
+	<div class="amount__counter">
+		<button
+	class="button button-secondary button-small counter__button"
+	id="button-decrement"
+>
+	-
+</button>
+<span class="counter__value counter__item" id="counter-value">1</span>
+<button
+	class="button button-secondary button-small counter__button"
+	id="button-increment"
+>
+	+
+</button>
+
+	</div>
+	<button class="button button-primary product__button">Add to cart</button>
+</section>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+			<section class="listing">
+	<div class="container listing__inner">
+		<h2 class="listing__title">Our popular products</h2>
+			<ul class="listing__list">
+	<li class="listing__item card card--large">
+	<a href="../../../product.html" class="card__link">
+		<img
+			src="images/listing/sofa.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£980</span>
+	</a>
+</li>
+
+	<li class="listing__item card ">
+	<a href="../../../product.html" class="card__link">
+		<img
+			src="images/listing/chair1.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Silky Vase</h4>
+		<span class="card__price">£250</span>
+	</a>
+</li>
+
+	<li class="listing__item card ">
+	<a href="../../../product.html" class="card__link">
+		<img
+			src="images/listing/chair2.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Lucy Lamp</h4>
+		<span class="card__price">£250</span>
+	</a>
+</li>
+
+</ul>
+		<a href="../../../shop.html" class="button button-secondary listing__button">
+			View collection
+		</a>
+	</div>
+</section>
+
+			<section class="features">
+	<div class="container features__inner">
+	<h2 class="visually-hidden">Features</h2>
+	<h3 class="features__title">What makes our brand different</h3>
+	<ul class="features__list df">
+		<li class="features__item features__item--delivery">
+			<h4 class="features__subtitle">Next day as standard</h4>
+			<p class="features__description">
+				Order before 3pm and get your order the next day as standard
+			</p>
+		</li>
+		<li class="features__item features__item--checkmark">
+			<h4 class="features__subtitle">Made by true artisans</h4>
+			<p class="features__description">
+				Handmade crafted goods made with real passion and craftsmanship
+			</p>
+		</li>
+		<li class="features__item features__item--purchase">
+			<h4 class="features__subtitle">Unbeatable prices</h4>
+			<p class="features__description">
+				For our materials and quality you won’t find better prices anywhere
+			</p>
+		</li>
+		<li class="features__item features__item--sprout">
+			<h4 class="features__subtitle">Recycled packaging</h4>
+			<p class="features__description">
+				We use 100% recycled packaging to ensure our footprint is manageable
+			</p>
+		</li>
+	</ul>
+</div>
+
+</section>
+
+			<aside class="sing-up">
+	<div class="container sing-up__inner">
+	<h2 class="sing-up__title">Join the club and get the benefits</h2>
+	<p class="sing-up__text">
+		Sign up for our newsletter and receive exclusive offers on new ranges,
+		sales, pop up stores and more
+	</p>
+	<form action="" class="sing-up__form">
+		<input class="input" type="text" placeholder="your@email.com" />
+		<button class="button button-primary sing-up__submit" type="submit">
+			Sign up
+		</button>
+	</form>
+</div>
+
+</aside>
+		</main>
+
+		<footer class="footer">
+	<div class="container footer__inner">
+		<section class="footer-top">
+			<!-- Menu -->
+			<div class="footer__menu">
+	<h3 class="footer__title">menu</h3>
+	<ul class="footer__list">
+		<li class="footer__item">
+	<a href="@@linkA" class="footer__link">New arrivals</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkB" class="footer__link">Best sellers</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkC" class="footer__link">Recently viewed</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkD" class="footer__link">Popular this week</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkE" class="footer__link">All products</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkF" class="footer__link"></a>
+</li>
+	</ul>
+</div>
+
+			<!-- Categories -->
+			<div class="footer__categories">
+	<h3 class="footer__title">categories</h3>
+	<ul class="footer__list">
+		<li class="footer__item">
+	<a href="@@linkA" class="footer__link">Crockery</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkB" class="footer__link">Furniture</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkC" class="footer__link">Homeware</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkD" class="footer__link">Plant pots</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkE" class="footer__link">Chairs</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkF" class="footer__link">Crockery</a>
+</li>
+	</ul>
+</div>
+
+			<!-- Our company -->
+			<div class="footer__our-company">
+	<h3 class="footer__title">our-company</h3>
+	<ul class="footer__list">
+		<li class="footer__item">
+	<a href="../../about.html" class="footer__link">About us</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkB" class="footer__link">Vacancies</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkC" class="footer__link">Contact us</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkD" class="footer__link">Privacy</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkE" class="footer__link">Returns policy</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkF" class="footer__link"></a>
+</li>
+	</ul>
+</div>
+
+			<form action="" class="footer__form">
+				<label for="email">Join our mailing list</label>
+				<div class="form__email">
+					<input
+						class="footer__input input"
+						id="email"
+						placeholder="your@email.com"
+						type="email"
+					/>
+					<button class="button button-default footer__button">Sign up</button>
+				</div>
+			</form>
+		</section>
+		<hr />
+		<section class="footer-bottom">
+			<span class="footer__copyright">Copyright 2023 Avion LTD</span>
+			<ul class="social">
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--linkedin"
+		aria-label="linkedin"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--facebook"
+		aria-label="facebook"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--instagram"
+		aria-label="instagram"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--skype"
+		aria-label="skype"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--twitter"
+		aria-label="twitter"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--pinterest"
+		aria-label="pinterest"
+	></a>
+</li>
+
+</ul>
+
+		</section>
+	</div>
+</footer>
 
 	</body>
 </html>

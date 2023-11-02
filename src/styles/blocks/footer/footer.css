@@ -1,0 +1,173 @@
+/* Footer */
+
+.footer {
+	color: var(--color-footer);
+	background-color: var(
+		--color-bg-footer
+	);
+	padding-top: clamp(40px, 6vw, 60px);
+	padding-bottom: 25px;
+}
+
+/* Top */
+
+.footer-top {
+	display: grid;
+	grid-template-columns: repeat(
+		6,
+		1fr
+	);
+	gap: 15px;
+	justify-content: space-between;
+
+	@media (width < 1000px) {
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(100px, 200px)
+		);
+	}
+}
+
+/* Title */
+
+.footer__title {
+	margin-bottom: 12px;
+
+	&::first-letter {
+		text-transform: uppercase;
+	}
+}
+
+/* List */
+
+.footer__list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.footer__title {
+	font-size: var(
+		--font-size-text-medium
+	);
+}
+
+.footer__link {
+	font-size: var(
+		--font-size-text-small
+	);
+}
+
+/* Form */
+
+.footer__form {
+	grid-column: span 3;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	@media (width < 600px) {
+		grid-column: span 2;
+	}
+}
+
+/* Email block */
+
+.form__email {
+	display: flex;
+
+	@media (width < 500px) {
+		flex-direction: column;
+	}
+}
+
+/* Input */
+
+.footer__input {
+	background-color: var(
+		--color-bg-footer-input
+	);
+	color: var(--color-text-invert);
+	/* width: 65%; */
+	flex: 6;
+}
+
+/* Button */
+
+.footer__button {
+	/* width: 35%; */
+	flex: 3;
+}
+
+/* Line */
+
+.footer hr {
+	background-color: rgb(
+		var(--primary)
+	);
+	border: none;
+	height: 1px;
+	margin-top: clamp(16px, 5vw, 48px);
+	margin-bottom: clamp(
+		20px,
+		5vw,
+		24px
+	);
+}
+
+/* Bottom */
+
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
+
+	@media (width < 600px) {
+		justify-content: center;
+	}
+}
+
+/* Copyright */
+
+.footer__copyright {
+	font-size: var(
+		--font-size-text-small
+	);
+}
+
+/* Social */
+
+.social {
+	display: flex;
+	gap: 24px;
+
+	@media (width < 600px) {
+		display: none;
+	}
+}
+
+.social__link {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 24px;
+	height: 24px;
+}
+
+.social__link--linkedin {
+	background-image: url("../images/icons/linkedin.svg");
+}
+.social__link--facebook {
+	background-image: url("../images/icons/facebook.svg");
+}
+.social__link--instagram {
+	background-image: url("../images/icons/instagram.svg");
+}
+.social__link--skype {
+	background-image: url("../images/icons/skype.svg");
+}
+.social__link--twitter {
+	background-image: url("../images/icons/twitter.svg");
+}
+.social__link--pinterest {
+	background-image: url("../images/icons/pinterest.svg");
+}

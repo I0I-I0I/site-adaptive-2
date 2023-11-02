@@ -1,0 +1,6 @@
+.about__title {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding: clamp(32px, 5vw, 70px) 0;
+}

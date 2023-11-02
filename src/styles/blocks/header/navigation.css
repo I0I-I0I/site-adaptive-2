@@ -1,6 +1,7 @@
 /* Menu */
 
 .menu {
+	position: relative;
 	justify-content: center;
 
 	@media (width < 1000px) {
@@ -14,14 +15,19 @@
 }
 
 /* Menu list */
+
 .menu__list {
 	justify-content: center;
 	gap: 2.75rem;
+	transition: all .3s ease;
 
 	@media (width < 1000px) {
 		display: none;
+		transform: translateX(150px);
 	}
 }
+
+/* Link */
 
 .menu__link {
 	color: var(--color-nav-link);
@@ -33,44 +39,39 @@
 }
 
 /* About */
+/* Shadow */
 
-.about__header
-	> .header__inner
-	> .menu {
+.about__header .menu--shadow {
 	position: relative;
 	background-color: var(
 		--color-bg-about-menu
 	);
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 50vw;
+		background-color: inherit;
+	}
+
+	&::before {
+		left: -50vw;
+	}
+
+	&::after {
+		right: -50vw;
+	}
+
+	@media (width < 1000px) {
+		background-color: transparent;
+	}
 }
 
-.about__header
-	> .header__inner
-	> .menu::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: -50vw;
-	width: 50vw;
-	background-color: var(
-		--color-bg-about-menu
-	);
-}
+/* Interactive menu */
 
-.about__header
-	> .header__inner
-	> .menu::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: -50vw;
-	width: 50vw;
-	background-color: var(
-		--color-bg-about-menu
-	);
-}
-
-.header__interactive > .menu {
+.interactive__menu {
 	margin-right: 45px;
 }

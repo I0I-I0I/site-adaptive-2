@@ -1,0 +1,21 @@
+/* Description */
+
+.product__subtitle {
+	font-size: var(
+		--font-size-text-medium
+	);
+}
+
+.product__description {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 20px;
+}
+
+/* Characteristic */
+
+.product__characteristic {
+	list-style-type: disc;
+	padding-left: 20px;
+}

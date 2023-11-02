@@ -14,7 +14,7 @@ export const js = () => {
 
 		.pipe(
 			webpack({
-				mode: "production",
+				mode: "development",
 				output: {
 					filename: "app.min.js",
 				},

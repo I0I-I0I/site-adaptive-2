@@ -5,11 +5,7 @@
 @import "banner.css";
 @import "burger.css";
 
-.header hr {
-	@media (width < 1000px) {
-		display: none;
-	}
-}
+/* Inner */
 
 .header__inner {
 	gap: 20px;
@@ -20,11 +16,15 @@
 	}
 }
 
+/* Top */
+
 .header__top {
 	padding: 20px 0;
 	gap: 20px;
 	width: 100%;
 }
+
+/* Buttons */
 
 .header__interactive {
 	gap: 16px;
@@ -36,6 +36,8 @@
 	}
 }
 
+/* Line */
+
 .header__inner > hr {
 	height: 1px;
 	width: 100%;
@@ -43,12 +45,15 @@
 	background-color: rgb(
 		var(--black) / 0.1
 	);
+
+	@media (width < 1000px) {
+		display: none;
+	}
 }
 
 /* Product */
 
-.product .header__inner {
+.product__header .header__inner {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-

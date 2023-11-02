@@ -1,15 +1,24 @@
+@import "header/header.css";
+@import "main/main.css";
+@import "sidebar/sing-up.css";
+@import "footer/footer.css";
+
 .page {
 	font-family: var(--font-main);
 	font-size: var(
 		--font-size-text-medium
 	);
-	line-height: 1.5;
+	line-height: normal;
 	letter-spacing: 0.02em;
 	scroll-behavior: smooth;
+
+	margin-right: calc(
+		-1 * (100vw - 100%)
+	);
 }
 
 .page__body {
-	color: rgb(var(--color));
+	color: rgb(var(--color-text));
 	background-color: rgb(
 		var(--color-bg)
 	);

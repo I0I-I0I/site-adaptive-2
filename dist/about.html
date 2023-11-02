@@ -47,8 +47,8 @@
 	<link rel="canonical" href="" />
 
 	<!-- css and js -->
-	<link rel="stylesheet" href="styles/index.min.css?_v=20231029235427" />
-	<script src="js/app.min.js?_v=20231029235427" defer></script>
+	<link rel="stylesheet" href="styles/index.min.css?_v=20231102214604" />
+	<script src="js/app.min.js?_v=20231102214604" defer></script>
 	<title>about</title>
 </head>
 
@@ -56,7 +56,7 @@
 	<body class="page__body">
 		<header class="header about__header">
 	<section class="banner">
-	<div class="container banner__inner">
+	<div class="container banner__inner df">
 		<span></span>
 		<p class="banner__text">
 			Free delivery on all orders over £50 with code easter checkout
@@ -67,26 +67,50 @@
 
 	<div class="container header__inner">
 		<div class="header__top df">
-	<span class="logo">Avion</span>
-	<div class="header__interactive df">
-		<nav class="menu">
+			<a href="../../../index.html" class="logo">Avion</a>
+			<div class="header__interactive df">
+				<nav class="menu interactive__menu">
 	<ul class="menu__list df">
-		<li class="menu__item"><a href="# " class="menu__link">About us</a></li>
-		<li class="menu__item"><a href="# " class="menu__link">Contact</a></li>
-		<li class="menu__item"><a href="# " class="menu__link">Blog</a></li>
+		<li class="menu__item">
+	<a href="#" class="menu__link">About us</a>
+</li>
+
+		<li class="menu__item">
+	<a href="#" class="menu__link">Contact</a>
+</li>
+
+		<li class="menu__item">
+	<a href="#" class="menu__link">Blog</a>
+</li>
+
 	</ul>
 </nav>
 
-		<button class="search" aria-label="search"></button>
-		<ul class="user__list">
-	<li class="user__item"><a href="#" class="user__link user-cart"></a></li>
-	<li class="user__item"><a href="#" class="user__link user-avatar"></a></li>
+
+				<button class="search" aria-label="search"></button>
+
+				<ul class="user__list df">
+	<li class="user__item">
+		<a href="#" class="user__link user-avatar" aria-label="cart"></a>
+	</li>
+	<li class="user__item">
+		<a
+			href="../../../shopping-cart.html"
+			class="user__link user-cart"
+			aria-label="account"
+		></a>
+	</li>
 </ul>
 
-	</div>
-</div>
-		<nav class="menu header__menu df">
-	<button class="burger df">
+			</div>
+		</div>
+		<nav class="menu header__menu menu--shadow df" id="menu">
+	<button
+		class="burger df"
+		id="burger"
+		type="button"
+		aria-label="menu burger open"
+	>
 		<span></span>
 		<span></span>
 		<span></span>
@@ -108,9 +132,248 @@
 </header>
 
 
-		<main class="main"></main>
+		<main class="main">
+			<section class="about-top">
+	<div class="container about-top__inner">
+		<h1 class="about__title">
+			A brand built on the love of craftmanship, quality and outstanding
+			customer service
+		</h1>
+	</div>
+</section>
 
-		<footer class="footer"></footer>
+			<section class="about">
+	<div>
+	<div class="container about__inner">
+		<h2 class="visually-hidden">About us</h2>
+		<h3 class="about__title">From a studio in London to a global brand with over 400 outlets</h3>
+		<p class="about__text">When we started Avion, the idea was simple. Make high quality furniture affordable and available for the mass market.</p>
+		<p class="about__text">Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique become the hotbed for the London interior design community.</p>
+		<button class="button button-secondary about__button">Get in touch</button>
+	</div>
+</div>
+
+<div class="about__image-block">
+	<picture><source srcset="images/about/about-bg.webp" type="image/webp"><img class="about__image" src="images/about/about-bg.jpg" /></picture>
+</div>
+
+</section>
+
+			<section class="about">
+	<div class="about__image-block">
+	<picture><source srcset="images/about/about-bg2.webp" type="image/webp"><img class="about__image" src="images/about/about-bg2.jpg" /></picture>
+</div>
+
+<div>
+	<div class="container about__inner">
+		<h2 class="visually-hidden">About us</h2>
+		<h3 class="about__title">Our service isn’t just personal, it’s actually hyper personally exquisite</h3>
+		<p class="about__text">When we started Avion, the idea was simple. Make high quality furniture affordable and available for the mass market.</p>
+		<p class="about__text">Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique become the hotbed for the London interior design community.</p>
+		<button class="button button-secondary about__button">Get in touch</button>
+	</div>
+</div>
+
+</section>
+			<section class="features">
+	<div class="container features__inner">
+	<h2 class="visually-hidden">Features</h2>
+	<h3 class="features__title">What makes our brand different</h3>
+	<ul class="features__list df">
+		<li class="features__item features__item--delivery">
+			<h4 class="features__subtitle">Next day as standard</h4>
+			<p class="features__description">
+				Order before 3pm and get your order the next day as standard
+			</p>
+		</li>
+		<li class="features__item features__item--checkmark">
+			<h4 class="features__subtitle">Made by true artisans</h4>
+			<p class="features__description">
+				Handmade crafted goods made with real passion and craftsmanship
+			</p>
+		</li>
+		<li class="features__item features__item--purchase">
+			<h4 class="features__subtitle">Unbeatable prices</h4>
+			<p class="features__description">
+				For our materials and quality you won’t find better prices anywhere
+			</p>
+		</li>
+		<li class="features__item features__item--sprout">
+			<h4 class="features__subtitle">Recycled packaging</h4>
+			<p class="features__description">
+				We use 100% recycled packaging to ensure our footprint is manageable
+			</p>
+		</li>
+	</ul>
+</div>
+
+</section>
+			<aside class="sing-up">
+	<div class="container sing-up__inner">
+	<h2 class="sing-up__title">Join the club and get the benefits</h2>
+	<p class="sing-up__text">
+		Sign up for our newsletter and receive exclusive offers on new ranges,
+		sales, pop up stores and more
+	</p>
+	<form action="" class="sing-up__form">
+		<input class="input" type="text" placeholder="your@email.com" />
+		<button class="button button-primary sing-up__submit" type="submit">
+			Sign up
+		</button>
+	</form>
+</div>
+
+</aside>
+		</main>
+
+		<footer class="footer">
+	<div class="container footer__inner">
+		<section class="footer-top">
+			<!-- Menu -->
+			<div class="footer__menu">
+	<h3 class="footer__title">menu</h3>
+	<ul class="footer__list">
+		<li class="footer__item">
+	<a href="@@linkA" class="footer__link">New arrivals</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkB" class="footer__link">Best sellers</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkC" class="footer__link">Recently viewed</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkD" class="footer__link">Popular this week</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkE" class="footer__link">All products</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkF" class="footer__link"></a>
+</li>
+	</ul>
+</div>
+
+			<!-- Categories -->
+			<div class="footer__categories">
+	<h3 class="footer__title">categories</h3>
+	<ul class="footer__list">
+		<li class="footer__item">
+	<a href="@@linkA" class="footer__link">Crockery</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkB" class="footer__link">Furniture</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkC" class="footer__link">Homeware</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkD" class="footer__link">Plant pots</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkE" class="footer__link">Chairs</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkF" class="footer__link">Crockery</a>
+</li>
+	</ul>
+</div>
+
+			<!-- Our company -->
+			<div class="footer__our-company">
+	<h3 class="footer__title">our-company</h3>
+	<ul class="footer__list">
+		<li class="footer__item">
+	<a href="../../about.html" class="footer__link">About us</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkB" class="footer__link">Vacancies</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkC" class="footer__link">Contact us</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkD" class="footer__link">Privacy</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkE" class="footer__link">Returns policy</a>
+</li>
+		<li class="footer__item">
+	<a href="@@linkF" class="footer__link"></a>
+</li>
+	</ul>
+</div>
+
+			<form action="" class="footer__form">
+				<label for="email">Join our mailing list</label>
+				<div class="form__email">
+					<input
+						class="footer__input input"
+						id="email"
+						placeholder="your@email.com"
+						type="email"
+					/>
+					<button class="button button-default footer__button">Sign up</button>
+				</div>
+			</form>
+		</section>
+		<hr />
+		<section class="footer-bottom">
+			<span class="footer__copyright">Copyright 2023 Avion LTD</span>
+			<ul class="social">
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--linkedin"
+		aria-label="linkedin"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--facebook"
+		aria-label="facebook"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--instagram"
+		aria-label="instagram"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--skype"
+		aria-label="skype"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--twitter"
+		aria-label="twitter"
+	></a>
+</li>
+
+	<li class="social__item">
+	<a
+		href="#"
+		class="social__link social__link--pinterest"
+		aria-label="pinterest"
+	></a>
+</li>
+
+</ul>
+
+		</section>
+	</div>
+</footer>
 
 	</body>
 </html>

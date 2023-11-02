@@ -1,0 +1,27 @@
+/* Card */
+
+.card {
+	grid-column: span 1;
+}
+
+.card--large {
+	grid-column: span 2;
+}
+
+/* Link */
+
+.card__link {
+	display: block;
+	transition: transform 0.2s ease;
+
+	&:hover {
+		transform: scale(1.02);
+	}
+}
+
+/* Title */
+
+.card__title {
+	margin-top: 24px;
+	margin-bottom: 8px;
+}

@@ -1,0 +1,163 @@
+/* Cart */
+
+.cart {
+	font-size: var(
+		--font-size-text-small
+	);
+}
+
+/* Title */
+
+.cart__title {
+	font-size: clamp(24px, 5vw, 36px);
+	margin-bottom: clamp(
+		16px,
+		5vw,
+		28px
+	);
+}
+
+.cart__subtitle {
+	font-size: clamp(16px, 3vw, 20px);
+}
+
+.cart__table {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+
+	& th {
+		padding-bottom: 12px;
+		font-weight: normal;
+		text-align: center;
+
+		&:first-child {
+			text-align: left;
+		}
+
+		&:last-child {
+			text-align: end;
+		}
+	}
+
+	& tbody tr:first-child td {
+		@media (width >= 700px) {
+			border-top: 1px solid
+				var(--color-border);
+		}
+	}
+
+	& tbody tr:last-child td {
+		padding-bottom: 32px;
+	}
+
+	& tfoot td {
+		border-top: 1px solid
+			var(--color-border);
+		padding-top: clamp(
+			20px,
+			3vw,
+			31px
+		);
+	}
+
+	& td.product__price {
+		text-align: end;
+	}
+
+	@media (width < 700px) {
+		& tr {
+			display: block;
+		}
+
+		& thead,
+		& td.product__price {
+			display: none;
+		}
+	}
+}
+
+.product__price {
+	font-size: var(
+		--font-size-text-medium
+	);
+}
+
+/* Product */
+
+.cart__product {
+	& img {
+		min-width: 110px;
+		min-height: 130px;
+		max-width: 111px;
+		max-height: 100%;
+		object-fit: cover;
+		object-position: center center;
+	}
+
+	& td {
+		padding-top: 20px;
+	}
+
+	/* Product item */
+
+	& td:first-child .product__item {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+}
+
+/* Description */
+
+.product__description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 8px;
+}
+
+/* Quantity */
+
+.quantity {
+	min-width: 170px;
+	color: var(
+		--color-bg-cart-footer-table
+	);
+
+	@media (width < 700px) {
+		display: flex;
+	}
+}
+
+/* Total price */
+
+.total-price-block {
+	text-align: right;
+
+	@media (width < 700px) {
+		width: 100%;
+	}
+}
+
+.total-price__title {
+	font-size: 20px;
+	display: inline-block;
+	margin-right: 16px;
+}
+
+/* Button */
+
+.cart__button-block {
+	width: 100%;
+	margin-top: 16px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: end;
+}
+
+.cart__button {
+	@media (width < 700px) {
+		width: 100%;
+	}
+}

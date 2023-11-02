@@ -37,24 +37,34 @@
 	--black: 0 0 0;
 
 	/* Text */
-	--color-text: rgb(var(--black));
-	--color-text-invert: rgb(var(--white));
+	--color-text: rgb(
+		var(--dark-primary)
+	);
+	--color-text-invert: rgb(
+		var(--white)
+	);
 
 	/* Navigation */
-	--color-bg-about-menu: rgb(var(--light-grey));
+	--color-bg-about-menu: rgb(
+		var(--light-grey)
+	);
 
 	/* Banner */
-	--color-bg-banner: rgb(var(--dark-primary));
+	--color-bg-banner: rgb(
+		var(--dark-primary)
+	);
 
 	/* Navigation link */
-	--color-nav-link: rgb(var(--bureaucracy));
+	--color-nav-link: rgb(
+		var(--bureaucracy)
+	);
 
 	/* Button */
 	--color-button-disabled: 50%;
 
 	/* Main */
 	--color-bg-button: rgb(
-		var(var(--white))
+		var(--white)
 	);
 	--color-bg-button-hover: rgb(
 		var(--light-grey)
@@ -122,9 +132,47 @@
 		var(--primary)
 	);
 
+	/* Input */
+	--color-bg-input: rgb(
+		var(--light-grey)
+	);
+	--color-input-outline: rgb(
+		var(--black)
+	);
+
+	/* Table */
+	--color-border: rgb(var(--border-gray));
+
 	/* Page components */
 
 	/* Home */
 	/* Hero */
 	--hero-bg: rgb(var(--dark-primary));
+	/* Sing-up */
+	--sing-up-bg: rgb(
+		var(--light-grey)
+	);
+	--sing-up-bg-inner: rgb(
+		var(--white)
+	);
+
+	/* Footer */
+	--color-footer: rgb(var(--white));
+	--color-bg-footer: rgb(
+		var(--dark-primary)
+	);
+	--color-bg-footer-input: rgb(
+		var(--white) / 0.15
+	);
+
+	/* Product */
+	--color-bg-amount: rgb(
+		var(--light-grey)
+	);
+	--color-amount: rgb(
+		var(--border-dark)
+	);
+
+	/* Cart */
+	--color-bg-cart-footer-table: rgb(var(--primary));
 }

@@ -1,11 +1,13 @@
-<header class="header product">
-	@@include("../banner.html", {})
+<header class="header product__header">
+	@@include("../components/banner.html", {})
 	<div class="container header__inner df">
-		@@include("../logo.html", {})
-		@@include("../navigation.html", {})
+		@@include("../components/logo.html", {
+			link: "../../../index.html"
+		})
+		@@include("../components/navigation.html", {})
 		<div class="header__interactive df">
-			@@include("../search.html", {})
-			@@include("../user.html", {})
+			@@include("../components/search.html", {})
+			@@include("../components/user.html", {})
 		</div>
 	</div>
 </header>

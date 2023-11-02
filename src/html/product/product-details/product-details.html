@@ -1,0 +1,18 @@
+<section class="product">
+	<img src="@images/product/product.jpg" alt="" class="product__image" />
+	<div class="container product__inner">
+		<div class="product__info">
+			<h1 class="product__title">
+				The Dandy Chair
+				<p class="product__price">£250</p>
+			</h1>
+			<div class="product__description">
+				@@include("./components/description.html", {})
+
+				@@include("./components/table.html", {})
+
+				@@include("./components/amount.html", {})
+			</div>
+		</div>
+	</div>
+</section>

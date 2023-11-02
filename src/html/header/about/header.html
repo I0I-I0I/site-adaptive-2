@@ -1,14 +1,22 @@
 <header class="header about__header">
-	@@include("../banner.html", {})
+	@@include("../components/banner.html", {})
 	<div class="container header__inner">
 		<div class="header__top df">
-			@@include("../logo.html", {})
+			@@include("../components/logo.html", {
+				link: "../../../index.html"
+			})
 			<div class="header__interactive df">
-				@@include("./list-links.html", {})
-				@@include("../search.html", {})
-				@@include("../user.html", {})
+				@@include("./interactive__menu.html", {
+					a: "About us",
+					b: "Contact",
+					c: "Blog",
+				})
+
+				@@include("../components/search.html", {})
+
+				@@include("../components/user.html", {})
 			</div>
 		</div>
-		@@include("../navigation.html", {})
+		@@include("../components/navigation.html", {})
 	</div>
 </header>

@@ -1,1 +1,17 @@
+/* Components */
+@import "components/features.css";
+@import "components/listing.css";
+
+/* Home */
 @import "home/hero.css";
+@import "home/about.css";
+
+/* Product */
+@import "product/product-details/product-details.css";
+@import "product/other-products.css";
+
+/* About */
+@import "about/about-top.css";
+
+/* Cart */
+@import "shopping-cart/cart.css"

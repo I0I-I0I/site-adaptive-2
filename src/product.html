@@ -5,8 +5,13 @@
 	<body class="page__body">
 		@@include("html/header/product/header.html", {})
 
-		<main class="main"></main>
+		<main class="main">
+			@@include("html/product/product-details/product-details.html", {})
+			@@include("html/product/other-products.html", {})
+			@@include("html/product/features.html", {})
+			@@include("html/product/sing-up.html", {})
+		</main>
 
-		@@include("html/footer.html", {})
+		@@include("html/footer/footer.html", {})
 	</body>
 </html>
