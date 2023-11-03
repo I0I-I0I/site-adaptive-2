@@ -14,4 +14,10 @@
 @import "about/about-top.css";
 
 /* Cart */
-@import "shopping-cart/cart.css"
+@import "shopping-cart/cart.css";
+
+/* Shop */
+@import "shop/shop.css";
+@import "shop/shop-top.css";
+@import "shop/filter.css";
+@import "shop/shop-products.css";

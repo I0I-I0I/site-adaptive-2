@@ -47,8 +47,8 @@
 	<link rel="canonical" href="" />
 
 	<!-- css and js -->
-	<link rel="stylesheet" href="styles/index.min.css?_v=20231102214604" />
-	<script src="js/app.min.js?_v=20231102214604" defer></script>
+	<link rel="stylesheet" href="styles/index.min.css?_v=20231103221024" />
+	<script src="js/app.min.js?_v=20231103221024" defer></script>
 	<title>shop</title>
 </head>
 
@@ -61,12 +61,12 @@
 		<p class="banner__text">
 			Free delivery on all orders over £50 with code easter checkout
 		</p>
-		<button class="banner__button-close" aria-label="close banner"></button>
+		<button class="banner__button-close" id="banner-button-close" aria-label="close banner"></button>
 	</div>
 </section>
 
 	<div class="container header__inner df">
-		<a href="../../../index.html" class="logo">Avion</a>
+		<a href="./index.html" class="logo">Avion</a>
 		<nav class="menu header__menu menu--shadow df" id="menu">
 	<button
 		class="burger df"
@@ -81,13 +81,27 @@
 	</button>
 
 	<ul class="menu__list df">
-		<li class="menu__item"><a href="# " class="menu__link">Plant pots</a></li>
-		<li class="menu__item"><a href="#" class="menu__link">Ceramics</a></li>
-		<li class="menu__item"><a href="#" class="menu__link">Tables</a></li>
-		<li class="menu__item"><a href="#" class="menu__link">Chairs</a></li>
-		<li class="menu__item"><a href="#" class="menu__link">Crockery</a></li>
-		<li class="menu__item"><a href="#" class="menu__link">Tableware</a></li>
-		<li class="menu__item"><a href="#" class="menu__link">Cutlery</a></li>
+		<li class="menu__item">
+			<a href="./shop.html" class="menu__link">Plant pots</a>
+		</li>
+		<li class="menu__item">
+			<a href="./shop.html" class="menu__link">Ceramics</a>
+		</li>
+		<li class="menu__item">
+			<a href="./shop.html" class="menu__link">Tables</a>
+		</li>
+		<li class="menu__item">
+			<a href="./shop.html" class="menu__link">Chairs</a>
+		</li>
+		<li class="menu__item">
+			<a href="./shop.html" class="menu__link">Crockery</a>
+		</li>
+		<li class="menu__item">
+			<a href="./shop.html" class="menu__link">Tableware</a>
+		</li>
+		<li class="menu__item">
+			<a href="./shop.html" class="menu__link">Cutlery</a>
+		</li>
 	</ul>
 </nav>
 
@@ -99,7 +113,7 @@
 	</li>
 	<li class="user__item">
 		<a
-			href="../../../shopping-cart.html"
+			href="./shopping-cart.html"
 			class="user__link user-cart"
 			aria-label="account"
 		></a>
@@ -112,6 +126,339 @@
 
 
 		<main class="main">
+			<section class="shop-top">
+	<div class="container shop-top__inner">
+		<h1 class="shop-top__title">All products</h1>
+	</div>
+</section>
+			<div class="container shop__body">
+				<aside class="filter">
+	<div class="filter__inner">
+		<ul class="filters__list df">
+			<li class="filters__filter">
+
+				<form action="">
+	<ul class="filter__list df">
+		<h2 class="filter__title">Product type</h2>
+
+		
+			<li class="filter__item df">
+	<label for="filter-furniture" class="filter__name">Furniture</label>
+	<input type="checkbox" id="filter-furniture" class="filter__input" />
+</li>
+		
+
+		
+			<li class="filter__item df">
+	<label for="filter-homeware" class="filter__name">Homeware</label>
+	<input type="checkbox" id="filter-homeware" class="filter__input" />
+</li>
+		
+
+		
+			<li class="filter__item df">
+	<label for="filter-sofas" class="filter__name">Sofas</label>
+	<input type="checkbox" id="filter-sofas" class="filter__input" />
+</li>
+		
+
+		
+			<li class="filter__item df">
+	<label for="filter-light-fittings" class="filter__name">Light fittings</label>
+	<input type="checkbox" id="filter-light-fittings" class="filter__input" />
+</li>
+		
+
+		
+			<li class="filter__item df">
+	<label for="filter-accessories" class="filter__name">Accessories</label>
+	<input type="checkbox" id="filter-accessories" class="filter__input" />
+</li>
+		
+
+	</ul>
+</form>
+
+
+			</li>
+			<li class="filters__filter">
+
+				<form action="">
+	<ul class="filter__list df">
+		<h2 class="filter__title">Price</h2>
+
+		
+			<li class="filter__item df">
+	<label for="filter-from-0-to-100" class="filter__name">0 - 100</label>
+	<input type="checkbox" id="filter-from-0-to-100" class="filter__input" />
+</li>
+		
+
+		
+			<li class="filter__item df">
+	<label for="filter-from-101-to-250" class="filter__name">101 - 250</label>
+	<input type="checkbox" id="filter-from-101-to-250" class="filter__input" />
+</li>
+		
+
+		
+			<li class="filter__item df">
+	<label for="filter-250+" class="filter__name">250 +</label>
+	<input type="checkbox" id="filter-250+" class="filter__input" />
+</li>
+		
+
+		
+
+		
+
+	</ul>
+</form>
+
+
+			</li>
+			<li class="filters__filter">
+
+				<form action="">
+	<ul class="filter__list df">
+		<h2 class="filter__title">Designer</h2>
+
+		
+			<li class="filter__item df">
+	<label for="filter-robert-smith" class="filter__name">Robert Smith</label>
+	<input type="checkbox" id="filter-robert-smith" class="filter__input" />
+</li>
+		
+
+		
+			<li class="filter__item df">
+	<label for="filter-liam-gallagher" class="filter__name">Liam Gallagher</label>
+	<input type="checkbox" id="filter-liam-gallagher" class="filter__input" />
+</li>
+		
+
+		
+			<li class="filter__item df">
+	<label for="filter-biggie-smalls" class="filter__name">Biggie Smalls</label>
+	<input type="checkbox" id="filter-biggie-smalls" class="filter__input" />
+</li>
+		
+
+		
+			<li class="filter__item df">
+	<label for="filter-thom-yorke" class="filter__name">Thom Yorke</label>
+	<input type="checkbox" id="filter-thom-yorke" class="filter__input" />
+</li>
+		
+
+		
+
+	</ul>
+</form>
+
+
+			</li>
+		</ul>
+	</div>
+</aside>
+
+				<section class="shop-products">
+	<div class="shop-products__inner">
+		<div class="dropdown" id="dropdown">
+			<div class="dropdown__button-block">
+				<button
+					class="button button-secondary dropdown-button button-filters"
+					id="dropdown-button-filters"
+				>
+					Filters
+				</button>
+				<button
+					class="button button-secondary dropdown-button button-sorting"
+					id="dropdown-button-sorting"
+				>
+					Sorting
+				</button>
+			</div>
+			<ul class="products__list">
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/chair2.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/chair1.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/vase1.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/vase2.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card card--large">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/sofa.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/lamp.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/chair2.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card card--large">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/sofa.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/chair1.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/vase1.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/vase2.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/lamp.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+	<li class="listing__item card ">
+	<a href="./product.html" class="card__link">
+		<img
+			src="images/listing/chair1.jpg"
+			alt=""
+			class="card__image"
+		/>
+		<h4 class="card__title">The Dandy chair</h4>
+		<span class="card__price">£125</span>
+	</a>
+</li>
+
+
+</ul>
+			<button class="button button-secondary shop-products__button">
+				Load more
+			</button>
+		</div>
+	</div>
+</section>
+
+			</div>
 		</main>
 
 		<footer class="footer">
@@ -172,7 +519,7 @@
 	<h3 class="footer__title">our-company</h3>
 	<ul class="footer__list">
 		<li class="footer__item">
-	<a href="../../about.html" class="footer__link">About us</a>
+	<a href="./about.html" class="footer__link">About us</a>
 </li>
 		<li class="footer__item">
 	<a href="@@linkB" class="footer__link">Vacancies</a>

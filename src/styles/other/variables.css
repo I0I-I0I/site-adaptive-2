@@ -40,6 +40,7 @@
 	--color-text: rgb(
 		var(--dark-primary)
 	);
+
 	--color-text-invert: rgb(
 		var(--white)
 	);
@@ -132,12 +133,18 @@
 		var(--primary)
 	);
 
+	/* Burger */
+	--color-bg-burger-menu: rgb(var(--white));
+
 	/* Input */
 	--color-bg-input: rgb(
 		var(--light-grey)
 	);
 	--color-input-outline: rgb(
 		var(--black)
+	);
+	--color-input-border: rgb(
+		var(--border-dark)
 	);
 
 	/* Table */

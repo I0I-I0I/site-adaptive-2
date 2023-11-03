@@ -1,0 +1,104 @@
+/* Filter */
+
+.filter {
+	padding-right: 150px;
+}
+
+.filters__list {
+	@media (width < 850px) {
+		display: none;
+	}
+}
+
+.dropdown__button-block {
+	display: grid;
+	grid-template-columns: repeat(
+		2,
+		1fr
+	);
+	gap: 16px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.dropdown-button {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 20px;
+		width: 10px;
+		height: 8px;
+		border-style: solid;
+		border-width: 8px 5px 0 5px;
+		border-color: #000000
+			transparent transparent
+			transparent;
+		transition: all 0.2s ease;
+	}
+
+	@media (width >= 850px) {
+		display: none;
+	}
+}
+
+.dropdown.is-open-filters
+	.button-filters,
+.dropdown.is-open-sorting
+	.button-sorting {
+	&::after {
+		rotate: 180deg;
+		top: calc(50% - 8px);
+	}
+}
+
+/* Title */
+
+.filter__title {
+	color: var(--Dark-Primary, #2a254b);
+	font-size: var(
+		--font-size-text-medium
+	);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.filters__list {
+	/* color: var(--Dark-Primary, #2a254b); */
+	flex-direction: column;
+	align-items: start;
+	gap: 48px;
+}
+
+.filter__list {
+	flex-direction: column;
+	align-items: start;
+	gap: 12px;
+}
+
+/* Item */
+
+.filter__item {
+	justify-content: start;
+	gap: 12px;
+}
+
+.filter__name {
+	order: 1;
+}
+
+.filter__name,
+.filter__input {
+	cursor: pointer;
+}
+
+/* Form */
+
+.filter__input {
+	width: 16px;
+	height: 16px;
+}

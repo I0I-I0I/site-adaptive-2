@@ -1,0 +1,24 @@
+<section class="shop-products">
+	<div class="shop-products__inner">
+		<div class="dropdown" id="dropdown">
+			<div class="dropdown__button-block">
+				<button
+					class="button button-secondary dropdown-button button-filters"
+					id="dropdown-button-filters"
+				>
+					Filters
+				</button>
+				<button
+					class="button button-secondary dropdown-button button-sorting"
+					id="dropdown-button-sorting"
+				>
+					Sorting
+				</button>
+			</div>
+			@@include("components/list.html", {})
+			<button class="button button-secondary shop-products__button">
+				Load more
+			</button>
+		</div>
+	</div>
+</section>

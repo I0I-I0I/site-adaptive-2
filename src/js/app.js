@@ -1,8 +1,9 @@
 // Banner
 const banner = document.querySelector(".banner")
+const bannerButtonClose = document.getElementById("banner-button-close")
 
 if (banner) {
-	banner.addEventListener("click", () => {
+	bannerButtonClose.addEventListener("click", () => {
 		banner.style.display = "none"
 	})
 }
@@ -47,3 +48,22 @@ if (document.getElementById("button-decrement")) {
 		counterValue.textContent = counter
 	})
 }
+
+// Dropdown
+
+const dropdown = document.getElementById("dropdown")
+const buttonFilters = document.getElementById("dropdown-button-filters")
+const buttonSorting = document.getElementById("dropdown-button-sorting")
+
+const isOpenSorting = "is-open-sorting"
+const isOpenFilters = "is-open-filters"
+
+buttonFilters.addEventListener("click", () => {
+	dropdown.classList.remove(isOpenSorting)
+	dropdown.classList.toggle(isOpenFilters)
+})
+
+buttonSorting.addEventListener("click", () => {
+	dropdown.classList.remove(isOpenFilters)
+	dropdown.classList.toggle(isOpenSorting)
+})

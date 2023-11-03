@@ -15,10 +15,11 @@
 	margin-right: calc(
 		-1 * (100vw - 100%)
 	);
+
 }
 
 .page__body {
-	color: rgb(var(--color-text));
+	color: var(--color-text);
 	background-color: rgb(
 		var(--color-bg)
 	);

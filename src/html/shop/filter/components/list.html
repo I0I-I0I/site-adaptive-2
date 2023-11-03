@@ -1,0 +1,41 @@
+<form action="">
+	<ul class="filter__list df">
+		<h2 class="filter__title">@@title</h2>
+
+		@@if (name1) {
+			@@include("list__li.html", {
+				name: "@@name1",
+				id: "@@id1"
+			})
+		}
+
+		@@if (name2) {
+			@@include("list__li.html", {
+				name: "@@name2",
+				id: "@@id2"
+			})
+		}
+
+		@@if (name3) {
+			@@include("list__li.html", {
+				name: "@@name3",
+				id: "@@id3"
+			})
+		}
+
+		@@if (name4) {
+			@@include("list__li.html", {
+				name: "@@name4",
+				id: "@@id4"
+			})
+		}
+
+		@@if (name5) {
+			@@include("list__li.html", {
+				name: "@@name5",
+				id: "@@id5"
+			})
+		}
+
+	</ul>
+</form>

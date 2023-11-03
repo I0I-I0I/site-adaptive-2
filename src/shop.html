@@ -6,6 +6,11 @@
 		@@include("html/header/product/header.html", {})
 
 		<main class="main">
+			@@include("html/shop/shop-top.html", {})
+			<div class="container shop__body">
+				@@include("html/shop/filter/filter.html", {})
+				@@include("html/shop/shop-products/shop-products.html", {})
+			</div>
 		</main>
 
 		@@include("html/footer/footer.html", {})

@@ -47,8 +47,7 @@
 
 /* Image */
 
-.product__image {
-	/* max-height: 1080px; */
+.product__image-big {
 	position: relative;
 
 	@media (width < 700px) {

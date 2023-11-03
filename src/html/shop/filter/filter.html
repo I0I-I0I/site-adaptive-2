@@ -1,0 +1,57 @@
+<aside class="filter">
+	<div class="filter__inner">
+		<ul class="filters__list df">
+			<li class="filters__filter">
+
+				@@include("./components/list.html", {
+					title: "Product type",
+					name1: "Furniture",
+					id1: "filter-furniture",
+					name2: "Homeware",
+					id2: "filter-homeware",
+					name3: "Sofas",
+					id3: "filter-sofas",
+					name4: "Light fittings",
+					id4: "filter-light-fittings",
+					name5: "Accessories",
+					id5: "filter-accessories"
+				})
+
+			</li>
+			<li class="filters__filter">
+
+				@@include("./components/list.html", {
+					title: "Price",
+					name1: "0 - 100",
+					id1: "filter-from-0-to-100",
+					name2: "101 - 250",
+					id2: "filter-from-101-to-250",
+					name3: "250 +",
+					id3: "filter-250+",
+					name4: "",
+					id4: "",
+					name5: "",
+					id5: ""
+				})
+
+			</li>
+			<li class="filters__filter">
+
+				@@include("./components/list.html", {
+					title: "Designer",
+					name1: "Robert Smith",
+					id1: "filter-robert-smith",
+					name2: "Liam Gallagher",
+					id2: "filter-liam-gallagher",
+					name3: "Biggie Smalls",
+					id3: "filter-biggie-smalls",
+					name4: "Thom Yorke",
+					id4: "filter-thom-yorke",
+					name5: "",
+					id5: ""
+				})
+
+			</li>
+		</ul>
+	</div>
+</aside>

@@ -1,0 +1,36 @@
+/* Shop top */
+
+.shop-top {
+	background-image: url("@images/shop/shop-top-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
+	max-width: 1920px;
+	margin: 0 auto;
+
+	height: clamp(150px, 10vw, 210px);
+}
+
+/* Inner */
+
+.shop-top__inner {
+	height: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: end;
+	padding-bottom: clamp(
+		32px,
+		5vw,
+		36px
+	);
+
+	@media (width < 1000px) {
+		justify-content: center;
+	}
+}
+
+/* Title */
+
+.shop-top__title {
+	color: var(--color-text-invert);
+}
