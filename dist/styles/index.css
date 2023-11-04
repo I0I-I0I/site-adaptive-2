@@ -758,7 +758,7 @@ h4 {
   background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: cover;
+  background-size: 16px;
   width: 16px;
   height: 16px;
   border: none;
@@ -1550,6 +1550,7 @@ h4 {
 		1fr;
   grid-template-columns: max-content
 		1fr;
+  overflow-x: hidden;
 }
 
 /* Shop top */
@@ -1574,9 +1575,6 @@ h4 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
   padding-bottom: clamp(
 		32px,
 		5vw,
@@ -1588,6 +1586,7 @@ h4 {
 
 .shop-top__title {
   color: var(--color-text-invert);
+  margin-top: auto;
 }
 
 /* Filter */
@@ -2347,8 +2346,8 @@ h4 {
   }
 
   .products__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .sing-up__submit {

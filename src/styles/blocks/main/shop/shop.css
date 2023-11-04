@@ -8,6 +8,7 @@
 	grid-template-columns:
 		max-content
 		1fr;
+	overflow-x: hidden;
 
 	@media (width < 850px) {
 		grid-template-columns: 1fr;
